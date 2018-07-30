@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>WebVTT</title>
+
+</head>
+
+<body>
+    <video id="videoElement" src="sintel_trailer-480p.mp4" type="video/mp4" style="display: inline;" controls>
+        <track defauld src="tracks.vtt" />
+    </video>
+    <style>
+        video::cue(#abba) {
+					background-color: pink;
+				}
+
+				video::cue(.bg) {
+					background-color: pink;
+				}
+				
+				video::cue(.redColor) {
+					color: red;
+				}
+
+				video::cue(:past) {
+					color: blue;
+				}
+
+				video::cue(:future) {
+					color: yellow;
+				}
+    </style>
+</body>
+
+</html>
